@@ -1,0 +1,3 @@
+a) Por que razão long populacao = 8000000000; não compila?
+
+Porque todo literal inteiro em Java é tratado como int por padrão. O maior valor que um int aceita é 2147483647 (cerca de 2,1 bilhões). Como 8000000000 (8 bilhões) é maior que isso, o compilador já dá erro no literal, antes mesmo de olhar para o long na esquerda.
